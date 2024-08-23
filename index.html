@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Práctico HTML - Rodrigo Alvarado</title>
+</head>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+
+    .desorden {
+        margin-left: 20px;
+    }
+    .orden {
+        margin-left: 20px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    table, th, td {
+        table, th, td {
+            border: 3px double #000000;
+    }
+    th, td {
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f4f4f4;
+    }
+    .formulario {
+        margin-top: 20px;
+    }
+    footer {
+        color: #000000;
+    }
+</style>
+<body>
+    
+    <header>
+        <h1>Encabezado Principal</h1>
+        <nav>
+            <ul>
+                <li><a href="#estructura">Estructura Básica</a></li>
+                <li><a href="#encabezados">Encabezados y Propiedades del Texto</a></li>
+                <li><a href="#enlaces-listas">Enlaces y Listas</a></li>
+                <li><a href="#multimedia">Multimedia</a></li>
+                <li><a href="#tablas">Tablas</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+<div>
+    <section id="estructura">
+        <h1>Estructura Básica del Documento HTML</h1>
+        <p>Este documento HTML tiene una estructura básica que incluye la declaración de DOCTYPE, etiquetas de metadatos y un título.</p>
+    </section>
+</div>
+
+<div>
+    <section id="encabezados">
+        <h1>Encabezados y Propiedades del Texto</h1>
+        <h1 style="font-weight: bold;">Este es un texto en negrita</h1>
+        <h2 style="font-style: italic;">Este es un texto en cursiva</h2>
+        <h3 style="text-decoration: underline;">Este es un texto subrayado</h3>
+        <h4 style="font-weight: bold;">Este es un texto en negrita</h4>
+        <h5 style="font-style: italic;">Este es un texto en cursiva</h5>
+        <h6 style="text-decoration: underline;">Este es un texto subrayado</h6>
+    </section>
+</div>
+
+<div>
+    <section id="enlaces-listas">
+        <h1>Enlaces y Listas</h1>
+        <p>Visita <a href="https://www.google.com" target="_blank">Google</a> para más información.</p>
+        
+        <h2>Lista Desordenada</h2>
+        <ul class="desorden">
+            <li>desorden 1</li>
+            <li>desorden 2</li>
+            <li>desorden 3</li>
+        </ul>
+        
+        <h2>Lista Ordenada</h2>
+        <ol class="orden">
+            <li>orden 1</li>
+            <li>orden 2</li>
+            <li>orden 3</li>
+        </ol>
+    </section>
+</div>
+
+<div>
+    <section id="multimedia">
+        <h1>Multimedia</h1>
+        <h2>Imagen</h2>
+        <img src="https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen-930x487.jpg" width="400px" alt="Imagen de ejemplo" />
+        
+        <h2>Video</h2>
+        <video controls>
+            <source src="https://video-previews.elements.envatousercontent.com/5b3b6876-9689-4cfe-9692-1cf061a156f6/watermarked_preview/watermarked_preview.mp4" type="video/mp4">
+        </video>
+        
+        <h2>Audio</h2>
+        <audio controls>
+            <source src="https://download.blender.org/peach/trailer/trailer_1080p.ogg" type="audio/mp3">
+        </audio>
+    </section>
+</div>
+    
+<div>
+    <section id="tablas">
+        <h1>Tablas</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Encabezado 1</th>
+                    <th>Encabezado 2</th>
+                    <th>Encabezado 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fila 1, Columna 1</td>
+                    <td>Fila 1, Columna 2</td>
+                    <td>Fila 1, Columna 3</td>
+                </tr>
+                <tr>
+                    <td>Fila 2, Columna 1</td>
+                    <td>Fila 2, Columna 2</td>
+                    <td>Fila 2, Columna 3</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</div>
+
+
+    <section id="formulario">
+        <h1>Formulario</h1>
+        <form class="formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+            <br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Trabajo Práctico de HTML</p>
+    </footer>
+
+
+</body>
+</html>
